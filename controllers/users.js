@@ -74,6 +74,7 @@ const login = ((req, res, next) => {
         maxAge: 3600 * 24 * 7,
         httpOnly: true,
         //sameSite: true,
+        secure: true,
         sameSite: 'none',
       }).send({ message: SUCCESS_MESSAGE_LOGIN });
     })
