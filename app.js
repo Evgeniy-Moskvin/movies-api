@@ -31,7 +31,8 @@ mongoose.connect(DB, {
   });
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://movies.emoskvin.nomoredomainsicu.ru', 'https://movies.emoskvin.nomoredomainsicu.ru'],
+  //origin: ['http://localhost:3000', 'http://movies.emoskvin.nomoredomainsicu.ru', 'https://movies.emoskvin.nomoredomainsicu.ru'],
+  origin: true,
   credentials: true,
 }));
 app.use(helmet());
