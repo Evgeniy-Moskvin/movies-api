@@ -84,7 +84,7 @@ const login = ((req, res, next) => {
 const logout = (req, res, next) => {
   try {
     res.clearCookie('jwt', {
-      sameSite: 'lax',
+      sameSite: 'none',
     })
       .status(STATUS_CODE_OK).send({ message: SUCCESS_MESSAGE_LOGOUT });
   } catch (err) {
